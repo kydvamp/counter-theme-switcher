@@ -1,0 +1,20 @@
+#nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+    padding: 0;
+    gap: 20px;
+}
+
+#info-button .material-symbols-outlined,
+#settings-button .material-symbols-outlined,
+#retry-button .material-symbols-outlined {
+    font-size: 30px; 
+    font-weight: bold;
+}
