@@ -15,6 +15,70 @@ ul {
 #info-button .material-symbols-outlined,
 #settings-button .material-symbols-outlined,
 #retry-button .material-symbols-outlined {
-    font-size: 30px; 
-    font-weight: bold;
+    font-size: 30px;
+    color: #757575;
+    text-shadow: 
+        0 4px 3px 1px #FCFCFC, 
+        0 6px 8px #D6D7D9, 
+        0 -4px 4px #CECFD1, 
+        0 -6px 4px #FEFEFE, 
+        inset 0 0 3px 3px #CECFD1;
 }
+
+#info-button .material-symbols-outlined:hover,
+#settings-button .material-symbols-outlined:hover,
+#retry-button .material-symbols-outlined:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+    transition: transform 0.2s ease-in-out; 
+    color: #585858;
+}
+
+.counter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 150px 50px 0 50px;
+}
+
+#increment-button,
+#decrement-button {
+    font-size: 60px; /* Make the + and - symbols larger */
+    font-style: bold;
+    user-select: none;
+    border: black 2px solid;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    outline: none;
+    cursor: pointer;
+    width: 100px; /* Increase the width of the button */
+    height: 100px; /* Increase the height of the button */
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 75px; /* Keep the button circular */
+    border: 1px solid #656565;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    color: #757575;
+    text-shadow: 0 1px #fff;
+}
+
+#increment-button:hover,
+#decrement-button:hover {
+    color: #585858;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+#increment-button:active,
+#decrement-button:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+#increment-button:focus,
+#decrement-button:focus {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+
+
