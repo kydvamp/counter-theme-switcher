@@ -36,26 +36,31 @@ ul {
 
 .counter-buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 150px 50px 0 50px;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 1000px; 
 }
 
 #increment-button,
 #decrement-button {
-    font-size: 60px; /* Make the + and - symbols larger */
+    font-size: 60px;
     font-style: bold;
     user-select: none;
     border: black 2px solid;
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center;     /* Vertical centering */
+    justify-content: center;
+    align-items: center;    
     outline: none;
     cursor: pointer;
-    width: 100px; /* Increase the width of the button */
-    height: 100px; /* Increase the height of the button */
+    width: 120px; 
+    height: 120px; 
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-    border-radius: 75px; /* Keep the button circular */
+    border-radius: 60px; 
     border: 1px solid #656565;
     transition: all 0.2s ease;
     font-family: "Source Sans Pro", sans-serif;
@@ -78,6 +83,14 @@ ul {
 #increment-button:focus,
 #decrement-button:focus {
     box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+#number-display {
+    font-size: 21rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #444444;
+    text-align: center;
+    user-select: none;
 }
 
 
