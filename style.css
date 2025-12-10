@@ -91,6 +91,7 @@ ul {
     color: #444444;
     text-align: center;
     user-select: none;
+    display: block;
 }
 
 
