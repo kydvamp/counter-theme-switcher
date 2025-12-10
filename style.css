@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+#body {
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -13,7 +21,8 @@ ul {
 }
 
 #info-button .material-symbols-outlined,
-#settings-button .material-symbols-outlined,
+#light-mode-button .material-symbols-outlined,
+#dark-mode-button .material-symbols-outlined,
 #retry-button .material-symbols-outlined {
     font-size: 30px;
     color: #757575;
@@ -26,7 +35,8 @@ ul {
 }
 
 #info-button .material-symbols-outlined:hover,
-#settings-button .material-symbols-outlined:hover,
+#light-mode-button .material-symbols-outlined:hover,
+#dark-mode-button .material-symbols-outlined:hover,
 #retry-button .material-symbols-outlined:hover {
     cursor: pointer;
     transform: scale(1.2); 
@@ -104,6 +114,39 @@ ul {
     display: none;
 }
 
+body.dark-mode {
+    background-color: #000000;
+    color: #eee;
+    transition: background-color 0.3s ease;
+}
 
+body.dark-mode #increment-button,
+body.dark-mode #decrement-button {
+    background-image: linear-gradient(to top, #000000 0%, #000000 80%, #000000 100%);
+    border: 1px solid #767676;
+    color: #ffffff;
+    text-shadow: 0 1px #000;
+}
 
+body.dark-mode #increment-button:hover,
+body.dark-mode #decrement-button:hover {
+    color: #dddddd;
+    box-shadow: 0 4px 3px 1px #1A1A1A, 0 6px 8px #2D2D2D, 0 -4px 4px #3C3C3C, 0 -6px 4px #444444, inset 0 0 3px 3px #3C3C3C;
+}
 
+body.dark-mode #number-display {
+    color: #ffffff;
+}
+
+body.dark-mode #info-button .material-symbols-outlined,
+body.dark-mode #light-mode-button .material-symbols-outlined,       
+body.dark-mode #dark-mode-button .material-symbols-outlined,
+body.dark-mode #retry-button .material-symbols-outlined {
+    color: #ffffff;
+    text-shadow: 
+        0 4px 3px 1px #1A1A1A, 
+        0 6px 8px #2D2D2D, 
+        0 -4px 4px #3C3C3C, 
+        0 -6px 4px #444444, 
+        inset 0 0 3px 3px #3C3C3C;
+}
