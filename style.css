@@ -36,14 +36,20 @@ ul {
 
 .counter-buttons {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center; 
+    flex-direction: row; /* Align buttons in a row */
+    justify-content: space-between; /* Push the + button to the right */
+    align-items: center; /* Align everything vertically */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 1000px; 
+    transform: translate(-50%, -50%);
+    width: 1000px; /* Adjust width to control spacing */
+    gap: 20px; /* Add spacing between elements */
+}
+
+#spacer {
+    flex-grow: 1; /* Take up all available space to push the + button to the right */
+    visibility: hidden; /* Keep the spacer invisible */
 }
 
 #increment-button,
@@ -54,13 +60,13 @@ ul {
     border: black 2px solid;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     outline: none;
     cursor: pointer;
-    width: 120px; 
-    height: 120px; 
+    width: 120px;
+    height: 120px;
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-    border-radius: 60px; 
+    border-radius: 60px;
     border: 1px solid #656565;
     transition: all 0.2s ease;
     font-family: "Source Sans Pro", sans-serif;
@@ -93,6 +99,11 @@ ul {
     user-select: none;
     display: block;
 }
+
+.hidden {
+    display: none;
+}
+
 
 
 
