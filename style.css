@@ -53,8 +53,8 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px; /* Adjust width to control spacing */
-    gap: 20px; /* Add spacing between elements */
+    width: 1000px; 
+    gap: 20px; 
 }
 
 #spacer {
